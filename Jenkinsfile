@@ -1,9 +1,13 @@
 pipeline {
-    stage('Build') {
-        steps {
-            echo 'Building...'
-            sleep 30
-            echo 'Build finish'
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello'
+                sleep 3
+                echo 'World'
+            }
         }
     }
 }
